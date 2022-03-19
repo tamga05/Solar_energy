@@ -21,19 +21,33 @@ $colorHeaderBtn: #0aa566;
     line-height: 22px;
 }
 
-%text400-16-26 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-}
 
-%text400-18-29 {
-    font-family: "Roboto", sans-serif;
+
+
+
+%text400-18-25 {
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 29px;
+    line-height: 25px;
 }
+
+%text400-42-57 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 57px;
+}
+
+%text700-64-87 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 87px;
+}
+
+
+
 
 %text500-14-14 {
     font-family: "Roboto", sans-serif;
@@ -67,12 +81,7 @@ $colorHeaderBtn: #0aa566;
     color: #121920;
 }
 
-%text700-16-22 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-}
+
 
 %cardPromo {
     height: 28px;

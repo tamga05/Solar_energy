@@ -320,17 +320,92 @@ template {
 [hidden] {
   display: none; }
 
+.header__span-1, .header__btn-span {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px; }
+
+.header__span-2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 57px; }
+
+.header__title {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px; }
+
 .header {
   max-width: 1930px;
   padding: 0 5px;
-  height: 100vh;
   background-image: url(./../images/header/header-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .header__inner {
-    max-width: 1210px;
+    max-width: 930px;
     margin: auto;
-    padding: 0 5px; }
+    padding: 70px 0 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .header__logo {
+    margin-bottom: 140px; }
+    .header__logo:hover #logo {
+      fill: #2374ec; }
+  .header__span-1 {
+    color: #FFFFFF;
+    text-align: center; }
+  .header__title {
+    font-variant: small-caps;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+    text-align: center; }
+    @media screen and (max-width: 435px) {
+      .header__title {
+        font-size: 45px;
+        line-height: 60px; } }
+  .header__span-2 {
+    color: #FFFFFF;
+    margin-bottom: 50px;
+    text-align: center; }
+    @media screen and (max-width: 435px) {
+      .header__span-2 {
+        font-size: 35px;
+        line-height: 50px; } }
+  .header__btn-wrap {
+    width: 308px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 250px; }
+    @media screen and (max-width: 435px) {
+      .header__btn-wrap {
+        margin-bottom: 120px; } }
+  .header__btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease; }
+    .header__btn:hover {
+      background: #A9A32A;
+      transition: 0.1s; }
+  .header__btn-span {
+    color: #FFFFFF;
+    position: absolute;
+    right: 0;
+    bottom: 16px; }
+  .header__social {
+    display: flex;
+    align-items: center;
+    gap: 20px; }
 
 /*# sourceMappingURL=style.min.css.map */
