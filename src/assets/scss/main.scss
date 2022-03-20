@@ -1,21 +1,13 @@
 @import "./base/normalize.scss";
 
-
-
-
-
 @import "./abstracts/variables";
 
-
-//@import "./components/fonts";
-//@import "./components/logo";
-//@import "./components/btn";
-//@import "./components/title";
-//@import "./components/text";
-//@import "./components/heading";
-
+@import "./components/logo";
+@import "./components/btn";
+@import "./components/social-list";
 
 @import "./layout/header";
-//@import "./layout/footer";
+@import "./layout/services";
+@import "./layout/footer";
 
 

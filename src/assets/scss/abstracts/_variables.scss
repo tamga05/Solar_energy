@@ -25,6 +25,8 @@ $colorHeaderBtn: #0aa566;
 
 
 
+
+
 %text400-18-25 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
@@ -39,12 +41,31 @@ $colorHeaderBtn: #0aa566;
     line-height: 57px;
 }
 
+%text700-18-25 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #303030;
+}
+
+%text700-24-33 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #868585;
+}
+
 %text700-64-87 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 64px;
     line-height: 87px;
 }
+
+
 
 
 
@@ -72,14 +93,7 @@ $colorHeaderBtn: #0aa566;
     color: #121920;
 }
 
-%text500-36-58 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 58px;
-    text-transform: uppercase;
-    color: #121920;
-}
+
 
 
 
