@@ -1,31 +1,10 @@
-// Тестовый шрифт    $fontFamily: Schwabacher;
-
-$colorHeaderBtn: #0aa566;
-
-%mainContainer {
-    max-width: 1180px;
-    margin: auto;
-}
-
-%text400-14-20 {
-    font-family: "Roboto", sans-serif;
+%text400-14-19 {
+    font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 19px;
+    color: #303030;
 }
-
-%text400-14-22 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-
-
-
-
-
 
 %text400-18-25 {
     font-family: 'Noto Sans', sans-serif;
@@ -63,59 +42,4 @@ $colorHeaderBtn: #0aa566;
     font-weight: 700;
     font-size: 64px;
     line-height: 87px;
-}
-
-
-
-
-
-
-%text500-14-14 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 14px;
-}
-
-%text500-18-25 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    color: #121920;
-}
-
-%text500-30-42 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 42px;
-    color: #121920;
-}
-
-
-
-
-
-%cardPromo {
-    height: 28px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-%transparentButton {
-    height: 50px;
-    padding-left: 30px;
-    border: 1px solid #34AADD;
-    border-radius: 5px;
-    background: #FFFFFF;
-    cursor: pointer;
-    margin-top: 30px;
-    @extend %text500-14-14;
-    color: #34AADD;
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }

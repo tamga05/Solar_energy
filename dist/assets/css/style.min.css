@@ -320,6 +320,13 @@ template {
 [hidden] {
   display: none; }
 
+.services__text {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030; }
+
 .btn-span, .header__span-1 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
@@ -331,6 +338,21 @@ template {
   font-weight: 400;
   font-size: 42px;
   line-height: 57px; }
+
+.services__subtitle {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #303030; }
+
+.services__title {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #868585; }
 
 .header__title {
   font-family: 'Noto Sans', sans-serif;
@@ -419,11 +441,49 @@ template {
         font-size: 35px;
         line-height: 50px; } }
 
-.services {
-  background: #4b65db;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.services__container {
+  max-width: 1224px;
+  margin: auto;
+  padding: 150px 5px; }
+  @media screen and (max-width: 1440px) {
+    .services__container {
+      padding: 75px 5px; } }
+
+.services__title {
+  padding-left: 14px;
+  margin-bottom: 60px; }
+  @media screen and (max-width: 1440px) {
+    .services__title {
+      text-align: center;
+      padding-left: 0; } }
+
+.services__content {
+  display: flex; }
+  @media screen and (max-width: 1440px) {
+    .services__content {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center; } }
+
+.services__block-text {
+  padding-left: 14px; }
+  @media screen and (max-width: 1440px) {
+    .services__block-text {
+      padding-left: 0; } }
+
+.services__subtitle {
+  max-width: 455px;
+  margin-bottom: 15px; }
+
+.services__text {
+  max-width: 510px;
+  margin-bottom: 50px; }
+  .services__text:last-of-type {
+    margin-bottom: 35px; }
+
+.services__image {
+  max-width: 600px;
+  width: 100%; }
 
 .footer__top {
   background-color: #f6a839;
