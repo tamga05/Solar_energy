@@ -378,7 +378,7 @@ template {
     line-height: 57px;
 }
 
-.services__subtitle {
+.services__subtitle, .tariff__block-right-text {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -387,7 +387,7 @@ template {
     color: #303030;
 }
 
-.services__title {
+.services__title, .tariff__title {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -594,10 +594,40 @@ template {
     width: 100%;
 }
 
+.tariff__container {
+    max-width: 1223px;
+    margin: auto;
+    padding: 150px 5px 164px;
+}
+
+.tariff__title {
+    margin-bottom: 60px;
+}
+
+.tariff__content {
+    display: -ms-flexbox;
+    display: flex;
+    gap: 91px;
+}
+
+.tariff__block-right {
+    padding-right: 13px;
+}
+
+.tariff__block-right-text {
+    max-width: 650px;
+    margin-bottom: 17px;
+}
+
+.tariff__block-right-img {
+    max-width: 650px;
+    width: 100%;
+}
+
 .quote {
     max-width: 1930px;
     padding: 0 5px;
-    background-image: url(./../images/quote/quote-bg.png);
+    background-image: url(./../images/quote/quote-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -612,16 +642,22 @@ template {
 .quote__inner {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-align: center;
     align-items: center;
 }
 
 .quote__text {
-    max-width: 673px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 576px) {
+    .quote__text {
+        font-size: 27px;
+        line-height: 40px;
+    }
 }
 
 .footer__top {

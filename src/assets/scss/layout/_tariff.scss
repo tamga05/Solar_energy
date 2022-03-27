@@ -1,0 +1,33 @@
+.tariff {
+
+    &__container {
+        max-width: 1223px;
+        margin: auto;
+        padding: 150px 5px 164px;
+    }
+
+    &__title {
+        @extend %text700-24-33;
+        margin-bottom: 60px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 91px;
+    }
+
+    &__block-right {
+        padding-right: 13px;
+    }
+
+    &__block-right-text {
+        max-width: 650px;
+        @extend %text700-18-25;
+        margin-bottom: 17px;
+    }
+
+    &__block-right-img {
+        max-width: 650px;
+        width: 100%;
+    }
+}
