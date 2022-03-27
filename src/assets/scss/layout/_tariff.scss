@@ -30,4 +30,17 @@
         max-width: 650px;
         width: 100%;
     }
+
+    &__block-left-list {
+        list-style-type: none;
+    }
+
+    &__block-left-link {
+        text-decoration: none;
+        border: 1px solid transparent;
+
+        &:hover {
+            border-bottom: 1px solid #303030;
+        }
+    }
 }
