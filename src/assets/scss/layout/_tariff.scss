@@ -13,7 +13,9 @@
 
     &__content {
         display: flex;
+        justify-content: space-between;
         gap: 91px;
+        margin: auto;
     }
 
     &__block-right {
@@ -33,14 +35,78 @@
 
     &__block-left-list {
         list-style-type: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        @extend %text400-18-25;
+        color: #303030;
+        margin-bottom: 120px;
     }
 
     &__block-left-link {
         text-decoration: none;
+    }
+
+    &__block-left-item {
         border: 1px solid transparent;
 
         &:hover {
             border-bottom: 1px solid #303030;
         }
     }
+
+    &__block-left-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+    }
 }
+
+.swiper {
+    width: 235px;
+    height: 200px;
+    position: relative;
+}
+
+// .swiper-wrapper {
+//     margin-bottom: 86px;
+// }
+
+.swiper-btn-prev {
+    width: 40px;
+    height: 8px;
+    background-image: url(./../images/tariff/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    //z-index: 5;
+}
+
+.swiper-btn-next {
+    width: 40px;
+    height: 8px;
+    background-image: url(./../images/tariff/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: 62px;
+    //z-index: 5;
+}
+
+.swiper-btn-prev:hover, .swiper-btn-next:hover {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    //border-radius: 4px;
+    //background: #A9A32A;
+    transition: 0.3s;
+}
+
+.swiper-btn-prev:hover #arrow, .swiper-btn-next:hover #arrow {
+    fill: #A9A32A;
+}
+

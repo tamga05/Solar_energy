@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./assets/css/style.min.css">
+
     <link rel="icon" href="./assets/images/favicon.png" />
     <title>Solar energy</title>
 </head>
@@ -75,10 +81,22 @@
                 </div>
 
                 <ul class="header__social-list social-list">
-                    <a class="header__social-link" href="#" title="Click me"><li class="header__social-item"><img class="header__social-img" src="./assets/images/header/instagram.png" alt="instagram-ссылка"></li></a>
-                    <a class="header__social-link" href="#" title="Click me"><li class="header__social-item"><img class="header__social-img" src="./assets/images/header/telegram.png" alt="telegram-ссылка"></li></a>
-                    <a class="header__social-link" href="#" title="Click me"><li class="header__social-item"><img class="header__social-img" src="./assets/images/header/whatsapp.png" alt="whatsapp-ссылка"></li></a>
-                    <a class="header__social-link" href="#" title="Click me"><li class="header__social-item"><img class="header__social-img" src="./assets/images/header/facebook.png" alt="facebook-ссылка"></li></a>
+                    <a class="header__social-link" href="#" title="Click me">
+                        <li class="header__social-item"><img class="header__social-img"
+                                src="./assets/images/header/instagram.png" alt="instagram-ссылка"></li>
+                    </a>
+                    <a class="header__social-link" href="#" title="Click me">
+                        <li class="header__social-item"><img class="header__social-img"
+                                src="./assets/images/header/telegram.png" alt="telegram-ссылка"></li>
+                    </a>
+                    <a class="header__social-link" href="#" title="Click me">
+                        <li class="header__social-item"><img class="header__social-img"
+                                src="./assets/images/header/whatsapp.png" alt="whatsapp-ссылка"></li>
+                    </a>
+                    <a class="header__social-link" href="#" title="Click me">
+                        <li class="header__social-item"><img class="header__social-img"
+                                src="./assets/images/header/facebook.png" alt="facebook-ссылка"></li>
+                    </a>
                 </ul>
 
             </div>
@@ -91,27 +109,40 @@
             <div class="services__content">
                 <div class="services__block-text">
                     <h2 class="services__subtitle">Полный комплект солнечной электростанции</h2>
-                    <p class="services__text">74 модели солнечных панелей, 31 модель инверторов, провода с повышенной устойчивостью к атмосферным условиям, качественные соединители, контроллеры зарядов и надёжные гелевые аккумуляторы с увеличенным сроком службы.</p>
+                    <p class="services__text">74 модели солнечных панелей, 31 модель инверторов, провода с повышенной
+                        устойчивостью к атмосферным условиям, качественные соединители, контроллеры зарядов и надёжные
+                        гелевые аккумуляторы с увеличенным сроком службы.</p>
 
                     <h2 class="services__subtitle">Подбор оборудования с максимальной производительностью</h2>
-                    <p class="services__text">Подбираем солнечные панели с учётом расположения Вашего дома, количеством прямого и рассеянного излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное количество электроэнергии и окупилась как можно быстрее.</p>
+                    <p class="services__text">Подбираем солнечные панели с учётом расположения Вашего дома, количеством
+                        прямого и рассеянного излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное
+                        количество электроэнергии и окупилась как можно быстрее.</p>
 
                     <h2 class="services__subtitle">Монтаж оборудования в соответствии с ГОСТом</h2>
-                    <p class="services__text">Монтаж производится в точном соответствии с ГОСТом, с учётом закона о «Зелёном тарифе» и требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела максимально возможную производительность.</p>
+                    <p class="services__text">Монтаж производится в точном соответствии с ГОСТом, с учётом закона о
+                        «Зелёном тарифе» и требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела
+                        максимально возможную производительность.</p>
 
                     <h2 class="services__subtitle">Помощь в подключении к «Зелёному тарифу»</h2>
-                    <p class="services__text">Всю бюрократическую процедуру по подключению Вашей электростанции к «Зелёному тарифу», мы берём на себя, в том числе по увеличению договорной мощности вашего дома. При заказе солнечной электростанции эта услуга абсолютно бесплатна.</p>
+                    <p class="services__text">Всю бюрократическую процедуру по подключению Вашей электростанции к
+                        «Зелёному тарифу», мы берём на себя, в том числе по увеличению договорной мощности вашего дома.
+                        При заказе солнечной электростанции эта услуга абсолютно бесплатна.</p>
                 </div>
-                <img class="services__image" src="./assets/images/services/solar-battery.jpg" alt="Фотогорафия полей солнечных батарей">
+                <img class="services__image" src="./assets/images/services/solar-battery.jpg"
+                    alt="Фотогорафия полей солнечных батарей">
             </div>
         </div>
     </section>
 
     <section class="tariff">
         <div class="tariff__container">
+
             <h2 class="tariff__title">ЗЕЛЁНЫЙ ТАРИФ</h2>
+
             <div class="tariff__content">
+
                 <div class="tariff__block-left">
+
                     <ul class="tariff__block-left-list">
                         <a class="tariff__block-left-link" href="#" title="Click me">
                             <li class="tariff__block-left-item">продажа</li>
@@ -123,11 +154,39 @@
                             <li class="tariff__block-left-item">ограничения</li>
                         </a>
                     </ul>
+
+                    <div class="tariff__block-left-content">
+
+                        <img src="./assets/images/tariff/img-small.jpg" alt="Малая фотография дома">
+
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">Slide 1</div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                ...
+                            </div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
                 <div class="tariff__block-right">
-                    <p class="tariff__block-right-text">«Зелёный тариф» — это особые тарифные условия, которые позволяют частным домохозяйствам  не только потреблять, но и продавать выработанное домашними солнечными электростанциями электричество в электросеть общего пользования.
+                    <p class="tariff__block-right-text">«Зелёный тариф» — это особые тарифные условия, которые позволяют
+                        частным домохозяйствам не только потреблять, но и продавать выработанное домашними солнечными
+                        электростанциями электричество в электросеть общего пользования.
                     </p>
-                    <img class="tariff__block-right-img" src="./assets/images/tariff/img-big.jpg" alt="Большая фотография дома">
+                    <img class="tariff__block-right-img" src="./assets/images/tariff/img-big.jpg"
+                        alt="Большая фотография дома">
                 </div>
             </div>
         </div>
@@ -136,16 +195,19 @@
     <section class="quote">
         <div class="quote__container">
             <div class="quote__inner">
-                <quote class="quote__text">«Солнечная электростанция<br> — идеальное вложение средств<br> в свою энергонезависимость и<br> пассивный доход»</quote>
+                <quote class="quote__text">«Солнечная электростанция<br> — идеальное вложение средств<br> в свою
+                    энергонезависимость и<br> пассивный доход»</quote>
             </div>
         </div>
     </section>
 
 
 
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
 
+    <script src="./assets/js/lib.js"></script>
 
-
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
