@@ -320,7 +320,7 @@ template {
 [hidden] {
   display: none; }
 
-.services__text, .tariff__grid-text, .swiper-slide {
+.services__text, .tariff__grid-text, .swiper-slide, .clients__info {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -339,7 +339,7 @@ template {
   font-size: 42px;
   line-height: 57px; }
 
-.services__subtitle, .tariff__block-right-text, .tariff__grid-subtitle {
+.services__subtitle, .tariff__block-right-text, .tariff__grid-subtitle, .clients__subtitle {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -347,7 +347,7 @@ template {
   text-transform: uppercase;
   color: #303030; }
 
-.services__title, .tariff__title {
+.services__title, .tariff__title, .clients__title {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -383,7 +383,7 @@ template {
   height: 100px;
   border-radius: 50%;
   background: transparent;
-  border: 1px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -490,7 +490,7 @@ template {
 .tariff__container {
   max-width: 1223px;
   margin: auto;
-  padding: 150px 5px 164px; }
+  padding: 0 5px 164px; }
   @media screen and (max-width: 1140px) {
     .tariff__container {
       padding: 0 5px 75px; } }
@@ -513,6 +513,9 @@ template {
 
 .tariff__block-right {
   padding-right: 13px; }
+  @media screen and (max-width: 1140px) {
+    .tariff__block-right {
+      padding-right: 0; } }
 
 .tariff__block-right-text {
   max-width: 650px;
@@ -626,6 +629,54 @@ template {
       .quote__text {
         font-size: 27px;
         line-height: 40px; } }
+
+.clients__container {
+  max-width: 1223px;
+  margin: auto;
+  padding: 136px 5px 150px; }
+
+.clients__title {
+  margin-bottom: 60px; }
+
+.clients__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 91px; }
+
+.clients__content {
+  padding-right: 13px; }
+
+.clients__subtitle {
+  text-transform: initial;
+  margin-bottom: 30px; }
+
+.clients__info {
+  line-height: 31px;
+  margin-left: 51px;
+  margin-bottom: 65px; }
+
+.clients__btn-wrap {
+  margin-bottom: 0; }
+
+.clients__btn {
+  border: 2px solid #303030; }
+
+.clients__btn-span {
+  color: #303030; }
+
+.swiper {
+  width: 510px;
+  height: 402px;
+  margin: 0; }
+
+.swiper-slide {
+  width: 510px;
+  height: 370px; }
+
+.swiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .footer__top {
   background-color: #f6a839;

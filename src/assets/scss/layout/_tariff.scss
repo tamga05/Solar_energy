@@ -3,7 +3,7 @@
     &__container {
         max-width: 1223px;
         margin: auto;
-        padding: 150px 5px 164px;
+        padding: 0 5px 164px;
 
         @media screen and (max-width: 1140px) {
             padding: 0 5px 75px;
@@ -34,6 +34,10 @@
 
     &__block-right {
         padding-right: 13px;
+
+        @media screen and (max-width: 1140px) {
+            padding-right: 0;
+        }
     }
 
     &__block-right-text {
