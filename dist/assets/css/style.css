@@ -356,7 +356,7 @@ template {
     display: none;
 }
 
-.services__text, .tariff__grid-text, .swiper-slide {
+.services__text, .tariff__grid-text, .swiper-slide, .clients__info {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -378,7 +378,7 @@ template {
     line-height: 57px;
 }
 
-.services__subtitle, .tariff__block-right-text, .tariff__grid-subtitle {
+.services__subtitle, .tariff__block-right-text, .tariff__grid-subtitle, .clients__subtitle {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -435,7 +435,7 @@ template {
     height: 100px;
     border-radius: 50%;
     background: transparent;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     cursor: pointer;
     display: -ms-flexbox;
     display: flex;
@@ -816,7 +816,60 @@ template {
 }
 
 .clients__title {
-    color: #868585;
+    margin-bottom: 60px;
+}
+
+.clients__main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 91px;
+}
+
+.clients__content {
+    padding-right: 13px;
+}
+
+.clients__subtitle {
+    text-transform: initial;
+    margin-bottom: 30px;
+}
+
+.clients__info {
+    line-height: 31px;
+    margin-left: 51px;
+    margin-bottom: 65px;
+}
+
+.clients__btn-wrap {
+    margin-bottom: 0;
+}
+
+.clients__btn {
+    border-color: #303030;
+}
+
+.clients__btn-span {
+    color: #303030;
+}
+
+.swiper {
+    width: 510px;
+    height: 402px;
+    margin: 0;
+}
+
+.swiper-slide {
+    width: 510px;
+    height: 370px;
+}
+
+.swiper-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 .footer__top {
