@@ -663,6 +663,7 @@ template {
 .swiper {
     width: 235px;
     height: 200px;
+    cursor: pointer;
     position: relative;
 }
 
@@ -674,7 +675,7 @@ template {
     background-position: center;
     position: absolute;
     bottom: 0;
-    left: 0px;
+    left: 0;
 }
 
 .swiper-btn-next {
@@ -688,14 +689,7 @@ template {
     left: 62px;
 }
 
-.swiper-btn-prev:hover, .swiper-btn-next:hover {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.3s;
-}
-
-.swiper-btn-prev:hover #arrow, .swiper-btn-next:hover #arrow {
+.swiper-btn-prev:hover #arrow-left, .swiper-btn-next:hover #arrow-right {
     fill: #A9A32A;
 }
 

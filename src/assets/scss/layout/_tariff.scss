@@ -4,18 +4,32 @@
         max-width: 1223px;
         margin: auto;
         padding: 150px 5px 164px;
+
+        @media screen and (max-width: 1140px) {
+            padding: 0 5px 75px;
+        }
     }
 
     &__title {
         @extend %text700-24-33;
         margin-bottom: 60px;
+
+        @media screen and (max-width: 1140px) {
+            text-align: center;
+        }
     }
 
     &__content {
         display: flex;
+
         justify-content: space-between;
         gap: 91px;
         margin: auto;
+
+        @media screen and (max-width: 1140px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__block-right {
@@ -41,6 +55,15 @@
         @extend %text400-18-25;
         color: #303030;
         margin-bottom: 120px;
+
+        @media screen and (max-width: 1140px) {
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            margin-bottom: 75px;
+        }
     }
 
     &__block-left-link {
@@ -55,23 +78,68 @@
         }
     }
 
-    &__block-left-content {
+    &__block-left-swiper {
+        max-width: 510px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 40px;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 235px 235px;
+        grid-template-rows: 2;
+        column-gap: 40px;
+        row-gap: 19px;
+
+        @media screen and (max-width: 576px) {
+            grid-template-columns: 235px;
+            justify-content: center;
+            row-gap: 25px;
+        }
+    }
+
+    &__grid-item {
+        max-width: 235px;
+    }
+
+    &__grid-subtitle {
+        @extend %text700-18-25;
+        margin-bottom: 5px;
+    }
+
+    &__grid-text {
+        @extend %text400-14-19;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 .swiper {
     width: 235px;
     height: 200px;
+    cursor: pointer;
     position: relative;
 }
 
-// .swiper-wrapper {
-//     margin-bottom: 86px;
-// }
+.swiper-slide {
+    @extend %text400-14-19;
+}
 
 .swiper-btn-prev {
     width: 40px;
@@ -81,8 +149,7 @@
     background-position: center;
     position: absolute;
     bottom: 0;
-    left: 0px;
-    //z-index: 5;
+    left: 0;
 }
 
 .swiper-btn-next {
@@ -94,19 +161,9 @@
     position: absolute;
     bottom: 0;
     left: 62px;
-    //z-index: 5;
 }
 
-.swiper-btn-prev:hover, .swiper-btn-next:hover {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    //border-radius: 4px;
-    //background: #A9A32A;
-    transition: 0.3s;
-}
-
-.swiper-btn-prev:hover #arrow, .swiper-btn-next:hover #arrow {
+.swiper-btn-prev:hover #arrow-left, .swiper-btn-next:hover #arrow-right {
     fill: #A9A32A;
 }
 
