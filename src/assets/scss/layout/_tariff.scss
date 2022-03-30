@@ -62,11 +62,11 @@
 
         @media screen and (max-width: 1140px) {
             justify-content: center;
+            margin-bottom: 75px;
         }
 
         @media screen and (max-width: 576px) {
             flex-direction: column;
-            margin-bottom: 75px;
         }
     }
 

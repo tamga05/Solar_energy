@@ -1,35 +1,35 @@
 
-//Инициализация Swiper в секции tariff
+//Инициализация Swiper1 в секции tariff
 
-const swiper1 = new Swiper('.swiper, .swiper1', {
+const swiper1 = new Swiper(".swiper, .swiper1", {
   // Optional parameters
-  direction: 'horizontal',
-  effect: 'slide',
+  direction: "horizontal",
+  effect: "slide",
   speed: 300,
   autoplay: true,
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-btn-next1',
-    prevEl: '.swiper-btn-prev1',
+    nextEl: ".swiper-btn-next1",
+    prevEl: ".swiper-btn-prev1",
   },
 });
 
-//Инициализация Swiper в секции clients
+//Инициализация Swiper2 в секции clients
 
-const swiper2 = new Swiper('.swiper, .swiper2', {
+const swiper2 = new Swiper(".swiper, .swiper2", {
   // Optional parameters
-  direction: 'horizontal',
-  effect: 'slide',
+  direction: "horizontal",
+  effect: "slide",
   speed: 300,
   autoplay: true,
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-btn-next2',
-    prevEl: '.swiper-btn-prev2',
+    nextEl: ".swiper-btn-next2",
+    prevEl: ".swiper-btn-prev2",
   },
 });
 

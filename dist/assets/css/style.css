@@ -356,7 +356,7 @@ template {
     display: none;
 }
 
-.services__text, .tariff__grid-text, .swiper-slide1, .clients__info {
+.services__text, .tariff__grid-text, .swiper-slide1, .clients__info, .guide__span, .guide__text {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -378,7 +378,7 @@ template {
     line-height: 57px;
 }
 
-.services__subtitle, .tariff__block-right-text, .tariff__grid-subtitle, .clients__subtitle {
+.services__subtitle, .tariff__block-right-text, .tariff__grid-subtitle, .clients__subtitle, .guide__subtitle {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -387,7 +387,7 @@ template {
     color: #303030;
 }
 
-.services__title, .tariff__title, .clients__title {
+.services__title, .tariff__title, .clients__title, .guide__title {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -669,6 +669,7 @@ template {
     .tariff__block-left-list {
         -ms-flex-pack: center;
         justify-content: center;
+        margin-bottom: 75px;
     }
 }
 
@@ -676,7 +677,6 @@ template {
     .tariff__block-left-list {
         -ms-flex-direction: column;
         flex-direction: column;
-        margin-bottom: 75px;
     }
 }
 
@@ -943,6 +943,76 @@ template {
 .swiper-btn-prev2:hover #arrow-left2,
 .swiper-btn-next2:hover #arrow-right2 {
     fill: #A9A32A;
+}
+
+.guide__container {
+    max-width: 1223px;
+    margin: auto;
+    padding: 0 5px 150px;
+}
+
+@media screen and (max-width: 1140px) {
+    .guide__container {
+        padding-bottom: 75px;
+    }
+}
+
+.guide__content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+@media screen and (max-width: 1140px) {
+    .guide__content {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.guide__title {
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1140px) {
+    .guide__title {
+        text-align: center;
+    }
+}
+
+.guide__block-text {
+    max-width: 510px;
+    margin-bottom: 30px;
+}
+
+.guide__block-text:last-of-type {
+    margin-bottom: 0;
+}
+
+.guide__span {
+    color: #868585;
+}
+
+.guide__subtitle {
+    margin-top: 11px;
+    margin-bottom: 2px;
+}
+
+.guide__img {
+    max-width: 600px;
+    width: 100%;
+    padding-right: 13px;
+}
+
+@media screen and (max-width: 1140px) {
+    .guide__img {
+        padding-right: 0;
+    }
 }
 
 .footer__top {
