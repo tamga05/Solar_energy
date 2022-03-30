@@ -32,4 +32,5 @@ const swiper2 = new Swiper('.swiper, .swiper2', {
     prevEl: '.swiper-btn-prev2',
   },
 });
+
 //# sourceMappingURL=script.js.map

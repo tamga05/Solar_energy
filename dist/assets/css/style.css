@@ -356,7 +356,7 @@ template {
     display: none;
 }
 
-.services__text, .tariff__grid-text, .swiper-slide, .clients__info {
+.services__text, .tariff__grid-text, .swiper-slide1, .clients__info {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -710,6 +710,7 @@ template {
         flex-direction: column;
         -ms-flex-align: center;
         align-items: center;
+        margin-bottom: 75px;
     }
 }
 
@@ -740,36 +741,33 @@ template {
     margin-bottom: 5px;
 }
 
-.swiper {
+.swiper1 {
     width: 235px;
     height: 200px;
+    margin: 0;
     cursor: pointer;
     position: relative;
 }
 
-.swiper-btn-prev {
-    width: 40px;
-    height: 8px;
-    background-image: url(./../images/tariff/arrow-left.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.swiper-slide1 {
+    width: 235px;
+    height: 114px;
+}
+
+.swiper-btn-prev1 {
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
-.swiper-btn-next {
-    width: 40px;
-    height: 8px;
-    background-image: url(./../images/tariff/arrow-right.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.swiper-btn-next1 {
     position: absolute;
     bottom: 0;
     left: 62px;
 }
 
-.swiper-btn-prev:hover #arrow-left, .swiper-btn-next:hover #arrow-right {
+.swiper-btn-prev1:hover #arrow-left1,
+.swiper-btn-next1:hover #arrow-right1 {
     fill: #A9A32A;
 }
 
@@ -815,8 +813,20 @@ template {
     padding: 136px 5px 150px;
 }
 
+@media screen and (max-width: 1140px) {
+    .clients__container {
+        padding: 75px 5px;
+    }
+}
+
 .clients__title {
     margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1140px) {
+    .clients__title {
+        text-align: center;
+    }
 }
 
 .clients__main {
@@ -827,8 +837,32 @@ template {
     gap: 91px;
 }
 
+@media screen and (max-width: 1140px) {
+    .clients__main {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 50px;
+        overflow: hidden;
+    }
+}
+
 .clients__content {
     padding-right: 13px;
+}
+
+@media screen and (max-width: 1140px) {
+    .clients__content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-right: 0;
+        gap: 50px;
+    }
 }
 
 .clients__subtitle {
@@ -836,10 +870,24 @@ template {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1140px) {
+    .clients__subtitle {
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
 .clients__info {
     line-height: 31px;
     margin-left: 51px;
     margin-bottom: 65px;
+}
+
+@media screen and (max-width: 1140px) {
+    .clients__info {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }
 
 .clients__btn-wrap {
@@ -854,21 +902,18 @@ template {
     color: #303030;
 }
 
-.swiper1 {
-    width: 235px;
-    height: 200px;
-    margin: 0;
-}
-
-.swiper-slide1 {
-    width: 235px;
-    height: 114px;
-}
-
 .swiper2 {
     width: 510px;
     height: 402px;
     margin: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+@media screen and (max-width: 1140px) {
+    .swiper2 {
+        margin-bottom: 25px;
+    }
 }
 
 .swiper-slide2 {
@@ -881,6 +926,23 @@ template {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.swiper-btn-prev2 {
+    position: absolute;
+    bottom: 0;
+    right: 194px;
+}
+
+.swiper-btn-next2 {
+    position: absolute;
+    bottom: 0;
+    right: 131px;
+}
+
+.swiper-btn-prev2:hover #arrow-left2,
+.swiper-btn-next2:hover #arrow-right2 {
+    fill: #A9A32A;
 }
 
 .footer__top {
