@@ -854,13 +854,24 @@ template {
     color: #303030;
 }
 
-.swiper {
+.swiper1 {
+    width: 235px;
+    height: 200px;
+    margin: 0;
+}
+
+.swiper-slide1 {
+    width: 235px;
+    height: 114px;
+}
+
+.swiper2 {
     width: 510px;
     height: 402px;
     margin: 0;
 }
 
-.swiper-slide {
+.swiper-slide2 {
     width: 510px;
     height: 370px;
 }

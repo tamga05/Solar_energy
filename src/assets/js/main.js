@@ -1,6 +1,6 @@
 //Инициализация Swiper в секции tariff
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper, .swiper1', {
   // Optional parameters
   direction: 'horizontal',
   effect: 'slide',
@@ -10,14 +10,14 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
+    nextEl: '.swiper-btn-next1',
+    prevEl: '.swiper-btn-prev1',
   },
 });
 
 //Инициализация Swiper в секции clients
 
-const swiper2 = new Swiper('.swiper', {
+const swiper2 = new Swiper('.swiper, .swiper2', {
   // Optional parameters
   direction: 'horizontal',
   effect: 'slide',
@@ -27,7 +27,7 @@ const swiper2 = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
+    nextEl: '.swiper-btn-next2',
+    prevEl: '.swiper-btn-prev2',
   },
 });
