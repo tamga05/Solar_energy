@@ -356,7 +356,15 @@ template {
     display: none;
 }
 
-.services__text, .tariff__grid-text, .swiper-slide1, .clients__info, .guide__span, .guide__text {
+.footer__bottom-span {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.footer input::-webkit-input-placeholder {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -364,7 +372,39 @@ template {
     color: #303030;
 }
 
-.btn-span, .header__span-1, .tariff__block-left-list {
+.footer input::-moz-placeholder {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.footer input:-ms-input-placeholder {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.footer input::-ms-input-placeholder {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.services__text, .tariff__grid-text, .swiper-slide1, .clients__info, .guide__span, .guide__text, .footer input::placeholder {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303030;
+}
+
+.btn-span, .header__span-1, .tariff__block-left-list, .footer__block-right-text {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -387,7 +427,7 @@ template {
     color: #303030;
 }
 
-.services__title, .tariff__title, .clients__title, .guide__title {
+.services__title, .tariff__title, .clients__title, .guide__title, .footer__block-left-title, .footer__block-right-title {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -1015,21 +1055,141 @@ template {
     }
 }
 
-.footer__top {
-    background-color: #f6a839;
-    margin-top: 5px;
+.footer {
+    max-width: 1930px;
+    padding: 0 5px;
+    background-image: url(./../images/footer/img-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.footer__top-wrapper {
-    max-width: 1720px;
-    width: 100%;
+.footer__container {
+    max-width: 1224px;
+    margin: auto;
+}
+
+.footer__top {
+    padding: 70px 0 100px 0;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 91px;
+}
+
+@media screen and (max-width: 1140px) {
+    .footer__top {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 50px 0 25px 0;
+    }
+}
+
+.footer__block-left-title {
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1140px) {
+    .footer__block-left-title {
+        text-align: center;
+    }
+}
+
+.footer__block-left-input {
+    width: 510px;
+    height: 30px;
+    display: block;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    outline: none;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 520px) {
+    .footer__block-left-input {
+        width: 100%;
+    }
+}
+
+.footer input::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.footer input::-moz-placeholder {
+    color: #FFFFFF;
+}
+
+.footer input:-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+.footer input::-ms-input-placeholder {
+    color: #FFFFFF;
+}
+
+.footer input::placeholder {
+    color: #FFFFFF;
+}
+
+.footer__btn-wrap {
+    margin-bottom: 0;
+}
+
+.footer__btn-span {
+    left: 51px;
+}
+
+.footer__block-right-title {
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1140px) {
+    .footer__block-right-title {
+        text-align: center;
+    }
+}
+
+.footer__block-right-text {
+    max-width: 600px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer__block-right-text:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer__bottom {
+    max-width: 1200px;
+    height: 51px;
+    margin: auto;
+    padding: 50px 14px 49px 2px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 80px 0 95px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer__bottom {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 50px;
+        height: auto;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 0;
+    -webkit-transform: translateX(-22px);
+    transform: translateX(-22px);
 }

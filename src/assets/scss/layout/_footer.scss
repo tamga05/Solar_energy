@@ -1,4 +1,5 @@
-.footer {max-width: 1930px;
+.footer {
+    max-width: 1930px;
     padding: 0 5px;
     background-image: url(./../images/footer/img-bg.png);
     background-position: center;
@@ -11,7 +12,78 @@
     }
 
     &__top {
+        padding: 70px 0 100px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 91px;
 
+        @media screen and (max-width: 1140px) {
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0 25px 0;
+        }
+    }
+
+    &__block-left-title {
+        @extend %text700-24-33;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 1140px) {
+            text-align: center;
+        }
+    }
+
+    &__block-left-form {}
+
+    &__block-left-input {
+        width: 510px;
+        height: 30px;
+        display: block;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #FFFFFF;
+        outline: none;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 520px) {
+            width: 100%;
+        }
+    }
+
+    input::placeholder {
+        @extend %text400-14-19;
+        color: #FFFFFF;
+    }
+
+    &__btn-wrap {
+        margin-bottom: 0;
+    }
+
+    &__btn-span {
+        left: 51px;
+    }
+
+    &__block-right-title {
+        @extend %text700-24-33;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 1140px) {
+            text-align: center;
+        }
+    }
+
+    &__block-right-text {
+        max-width: 600px;
+        @extend %text400-18-25;
+        color: #FFFFFF;
+        margin-bottom: 30px;
+    }
+
+    &__block-right-text:last-of-type {
+        margin-bottom: 0;
     }
 
     &__bottom {
@@ -22,6 +94,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: 700px) {
+            flex-direction: column;
+            gap: 50px;
+            height: auto;
+        }
     }
 
     &__bottom-span {
