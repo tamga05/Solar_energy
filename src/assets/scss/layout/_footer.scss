@@ -34,8 +34,6 @@
         }
     }
 
-    &__block-left-form {}
-
     &__block-left-input {
         width: 510px;
         height: 30px;
@@ -109,5 +107,9 @@
     &__logo {
         margin-bottom: 0;
         transform: translateX(-22px);
+
+        @media screen and (max-width: 700px) {
+            transform: initial;
+        }
     }
 }
